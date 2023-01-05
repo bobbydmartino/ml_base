@@ -1,0 +1,14 @@
+#processes
+debugpy
+reloadium
+ubelt
+
+#datsci
+pandas
+numpy
+matplotlib
+jupyter
+seaborn
+scikit-learn
+
+

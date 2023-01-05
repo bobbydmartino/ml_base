@@ -1,0 +1,15 @@
+version: '3'
+services:
+  test:
+    build: .
+    tty: true
+    stdin_open: true
+    volumes:
+      - ./src:/root/code
+      - ./configs:/root/configs
+      - ./scripts:/root/scripts
+      - ./output:/root/out
+      #mount data and models here
+      #- ./data:/root/data
+      #- ./models:/root/models
+    hostname: mlbuild
