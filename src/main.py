@@ -12,7 +12,6 @@ def yaml_config_parser(config_file):
     return config
 
 
-
 if __name__=="__main__":
     #take in an argument for the config file path using argaparse
     parser = argparse.ArgumentParser()

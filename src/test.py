@@ -1,5 +1,4 @@
 
-
 def test(config):
     print('Testing')
     print(config)

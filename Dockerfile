@@ -10,11 +10,14 @@ RUN apt-get update && apt-get install -y \
 	curl \
 	rsync \
 	git \
+    unzip \
 	python3-pip \
 	python-is-python3 \
+    python3-venv \
 	&& rm -rf /var/lib/apt/lists/*
 
-COPY src/requirements.txt /tmp/requirements.txt
+
+COPY scripts/requirements.txt /tmp/requirements.txt
 RUN pip install -r /tmp/requirements.txt
 
 WORKDIR /root/	
