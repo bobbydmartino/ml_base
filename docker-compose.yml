@@ -4,12 +4,13 @@ services:
     build: .
     tty: true
     stdin_open: true
+    ports:
+      - 8891:8888
     volumes:
-      - ./src:/root/code
-      - ./configs:/root/configs
-      - ./scripts:/root/scripts
-      - ./output:/root/out
-      #mount data and models here
-      #- ./data:/root/data
-      #- ./models:/root/models
+      - ./src:/code
+      - ./configs:/configs
+      - ./scripts:/scripts
+      - ./output:/out
+      - ./data:/data
+      - ./models:/models
     hostname: mlbuild
